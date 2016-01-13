@@ -1,0 +1,9 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "cml-main\tMatrixList",
+            "contents": "/**\n * CreateTime: \t${1:Press F5 insert time}\n * Author: \t\t$2\n * Desciption: \t$3 \n * ViewPath: \t$4 \n */"
+        }
+    ]
+}

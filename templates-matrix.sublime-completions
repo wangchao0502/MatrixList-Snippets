@@ -1,0 +1,9 @@
+{
+    "scope": "text.html - source - meta.tag, punctuation.definition.tag.begin",
+    "completions": [
+        {
+            "trigger": "tml-top-btns\tMatrixList",
+            "contents": "<a href=\"$1\" class=\"ui icon default button\" title=\"返回\">\n\t<i class=\"chevron left icon\"></i>返回\n</a>\n<a class=\"ui icon blue button\" href=\"$2\" target=\"_blank\">\n\t<i class=\"add icon\"></i>添加\n</a>\n<div class=\"ui icon green button $3\">\n\t<i class=\"add icon\"></i>导入\n</div>\n<div class=\"ui icon red button $4\">\n\t<i class=\"refresh icon\"></i>刷新\n</div>"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "scope": "source.js",
+    "completions": [
+        {
+            "trigger": "dml-main\tMatrixList",
+            "contents": "/*\n\tDescription:\n\t入口文件\n*/"
+        },
+        {
+        	"trigger": "dml-config\tMatrixList",
+        	"contents": "/*\n参数名\t\t\t\t类型\t\t是否必须\t说明\t\t\t\t\t\t\t\t\t\t\t\t\t示例\n---------------------------------------------------------------------------------------------------------------------\nel\t\t\t\t\tString\t否\t\tCSS选择器，列表父容器\t\nsearchParamsCache\tBoolean\t否\t\t是否开启搜索参数缓存（保存在URL上），默认为false不开启\t\njsonUrl\t\t\t\tString\t是\t\tGET 请求接口地址，默认都取该值\t\t\t\t\t\t\t/youzan/activity/subject.json\npostUrl\t\t\t\tString\t否\t\tPOST 请求接口地址，可不传，默认取jsonUrl\t\t\t\t/youzan/activity/subject.json\ndeleteUrl\t\t\tString\t否\t\tDELETE 请求接口地址，可不传，默认取jsonUrl\t\t\t\t/youzan/activity/subject.json\nputUrl\t\t\t\tString\t否\t\tPUT 请求接口地址，可不传，默认取jsonUrl\t\t\t\t\t/youzan/activity/subject.json\npatchUrl\t\t\tString\t否\t\tPATCH 请求接口地址，可不传，默认取jsonUrl\t\t\t\t/youzan/activity/subject.json\n*/"
+        },
+        {
+        	"trigger": "dml-top\tMatrixList",
+        	"contents": "/*\n参数名\t\t类型\t\t\t是否必须\t说明\t\t\t\t\t\t\t\t示例\n-----------------------------------------------------------------------\nshowNewBtn\tBoolean\t\t否\t\t是否显示新建按钮，默认false，不显示\ttrue\nnewBtnName\tString\t\t否\t\t新建按钮标题，默认值新建\t\t\t新建专题\nnewConfig\tObject\t\t否\t\t新建表单配置\t\ntemplate\tString\t\t否\t\t额外的模板\t\ndata\t\tObject\t\t否\t\tTop区域初始化数据\t\nevents\t\tObject\t\t否\t\tTop区域事件监听对象\t\ntabber\t\tObject\t\t否\t\tTabber导航菜单配置对象\t\nonRender\tFunction\t否\t\tTop区域渲染完成后的回调函数\t\n*/"
+        },
+        {
+        	"trigger": "dml-filter\tMatrixList",
+        	"contents": "/*\n参数名\t\t类型\t\t\t是否必须\t说明\t\t\t\t\t\t\t\t\t\t\t\t示例\n------------------------------------------------------------------------------------\nform\t\tArray\t\t否\t\tFilter区域的表单配置\t\ntemplate\tString\t\t否\t\tFilter区域HTML模板，如果传递了该参数，则优先使用模板\t\ndata\t\tObject\t\t否\t\tFilter区域初始化数据\t\nevents\t\tObject\t\t否\t\tFilter区域事件监听对象\t\nonRender\tFunction\t否\t\tFilter区域渲染完成后的回调函数\t\n*/"
+        },
+        {
+        	"trigger": "dml-form-text\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t\t类型\t\t说明\n-----------------------------------------------------------------\n单行文本输入框 \ttext\t\ttype\tString\t类型，这里为固定值：text\n\t\t\t\tlabel\t\tString\t表单元素标题\n\t\t\t\tname\t\tString\t表单元素name属性\n\t\t\t\tplaceholder\tString\t占位符placeholder\n\t\t\t\twidth\t\tNumber\t宽度，默认为4\n\t\t\t\tdisabled\tBoolean\t是否禁用，默认false\n\t\t\t\treadonly\tBoolean\t是否只读，默认false\n*/"
+        },
+        {
+        	"trigger": "dml-form-password\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t\t类型\t\t说明\n---------------------------------------------------------------------\n密码输入框 \t\tpassword\ttype\tString\t类型，这里为固定值：password\n\t\t\t\tlabel\t\tString\t表单元素标题\n\t\t\t\tname\t\tString\t表单元素name属性\n\t\t\t\tplaceholder\tString\t占位符placeholder\n\t\t\t\twidth\t\tNumber\t宽度，默认为4\n\t\t\t\tdisabled\tBoolean\t是否禁用，默认false\n\t\t\t\treadonly\tBoolean\t是否只读，默认false\n*/"
+        },
+        {
+        	"trigger": "dml-form-textarea\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t\t类型\t\t说明\n-----------------------------------------------------------------\n多行文本输入框 \ttextarea\ttype\tString\t类型，这里为固定值：textarea\n\t\t\t\tlabel\t\tString\t表单元素标题\n\t\t\t\tname\t\tString\t表单元素name属性\n\t\t\t\tplaceholder\tString\t占位符placeholder\n\t\t\t\twidth\t\tNumber\t宽度，默认为4\n\t\t\t\tdisabled\tBoolean\t是否禁用，默认false\n\t\t\t\treadonly\tBoolean\t是否只读，默认false\n*/"
+        },
+        {
+        	"trigger": "dml-form-select\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t\t类型\t\t说明\n-----------------------------------------------------------------\n下拉框 select\ttype\t\tString\t类型，这里为固定值：select\n\t\t\t\tlabel\t\tString\t表单元素标题\n\t\t\t\tname\t\tString\t表单元素name属性\n\t\t\t\twidth\t\tNumber\t宽度，默认为4\n\t\t\t\toptions\t\tArray\t下拉选项配置\n*/"
+        },
+        {
+        	"trigger": "dml-form-p\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t类型\t\t说明\n-----------------------------------------------------------------\n段落 p\t\t\ttype\tString\t类型，这里为固定值：p\n\t\t\t\tlabel\tString\t表单元素标题\n\t\t\t\tname\tString\t表单元素name属性\n\t\t\t\twidth\tNumber\t宽度，默认为4\n*/"
+        },
+        {
+        	"trigger": "dml-form-radio\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t类型\t\t说明\n-----------------------------------------------------------------\n单选框 \t\t\tradio\ttype\tString\t类型，这里为固定值：radio\n\t\t\t\tlabel\tString\t表单元素标题\n\t\t\t\tname\tString\t表单元素name属性\n\t\t\t\twidth\tNumber\t宽度，默认为4\n\t\t\t\toptions\tArray\t单选选项配置\n*/"
+        },
+        {
+        	"trigger": "dml-form-checkbox\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t\t类型\t\t说明\n-----------------------------------------------------------------\n复选框 checkbox\ttype\t\tString\t类型，这里为固定值：checkbox\n\t\t\t\tlabel\t\tString\t表单元素标题\n\t\t\t\tname\t\tString\t表单元素name属性\n\t\t\t\twidth\t\tNumber\t宽度，默认为4\n\t\t\t\toptions\t\tArray\t复选项配置\n*/"
+        },
+        {
+        	"trigger": "dml-form-hidden\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t类型\t\t说明\n-----------------------------------------------------------------\n隐藏域 hidden\ttype\tString\t类型，这里为固定值：hidden\n\t\t\t\tname\tString\t表单元素name属性\n*/"
+        },
+        {
+        	"trigger": "dml-form-date\tMatrixList",
+        	"contents": "/*\n元素\t\t\t\t参数\t\t\t类型\t\t\t说明\n-----------------------------------------------------------------\n日期选择器 date\ttype\t\tString\t\t类型，这里为固定值：date\n\t\t\t\tlabel\t\tString\t\t表单元素标题\n\t\t\t\tname\t\tString\t\t表单元素name属性\n\t\t\t\twidth\t\tNumber\t\t宽度，默认为4\n\t\t\t\tdisabled\tBoolean\t\t是否禁用，默认false\n\t\t\t\treadonly\tBoolean\t\t是否只读，默认false\n*/"
+        },
+        {
+        	"trigger": "dml-table\tMatrixList",
+        	"contents": "/*\n参数名\t\t\t类型\t\t是否必须\t说明\t\t\t\t\t示例\n------------------------------------------------------------------------------\ntitle\t\t\tString\t是\t\t表头列表标题\t\t\t专题ID\nis_sort\t\t\tBoolean\t否\t\t改列是否支持排序\t\nname\t\t\tString\t否\t\t\neditable\t\tBoolean\t否\t\t是否支持快速编辑\t\ntemplate\t\tString\t否\t\tHTML模板\t\nstyle\t\t\tString\t否\t\tCSS样式\t\t\t\tbackground:red;color:blue;\nshowDeleteBtn\tBoolean\t否\t\t是否显示删除按钮\t\nshowEditBtn\t\tBoolean\t否\t\t是否显示编辑按钮\t\nshowViewBtn\t\tBoolean\t否\t\t是否显示查看按钮\t\nevents\t\t\tObject\t否\t\t事件监听对象\t\n*/"
+        }
+
+    ]
+}
